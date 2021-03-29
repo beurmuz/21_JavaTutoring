@@ -1,9 +1,12 @@
 public class Obejct {
+    public static void sum(int i, int j) {
+        System.out.println(i+j);
+    }
     public static void main(String[] args) {
-        System.out.println(2+1);
-        System.out.println(2+2);
-        System.out.println(2+3);
+        sum(2,1);
+        sum(2,2);
+        sum(2,3);
         // ...
-        System.out.println(9+9);
+        sum(9,9);
     }
 }
