@@ -6,13 +6,20 @@ public class Obejct {
         System.out.println("avg : " + ((i+j)/2));
     }
     public static void main(String[] args) {
-        sum(2,1);
-        avg(2,1);
 
-        sum(2,2);
-        avg(2,2);
+        int a = 2, b = 1;
+        sum(a,b);
+        avg(a,b);
+
+        a = 3;
+        b = 5;
+        sum(a,b);
+        avg(a,b);
         // ...
-        sum(9,9);
-        avg(9,9);
+
+        a = 4;
+        b =8;
+        sum(a,b);
+        avg(a,b);
     }
 }
