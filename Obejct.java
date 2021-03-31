@@ -1,32 +1,26 @@
 class Calculator {
-    int a,b; 
-    static double PI = 3.14;
-    static int base = 10;
+    // int a,b; 
 
-    public void setOprands(int a, int b) {
-        this.a = a;
-        this.b = b;
+    // public void setOprands(int a, int b) {
+    //     this.a = a;
+    //     this.b = b;
+    // }
+
+    public static void sum(int a, int b) {
+        System.out.println("sum : " + (a+b));
     }
 
-    public void sum() {
-        System.out.println("sum : " + (this.a + this.b + base));
-    }
-
-    public void avg() {
-        System.out.println("avg : " + ((this.a + this.b + base)/2));
+    public static void avg(int a, int b) {
+        System.out.println("avg : " + ((a+b)/2));
     }
 
 }
 public class Obejct {
         public static void main(String[] args) {
+        Calculator.sum(10,20); // 30
+        Calculator.avg(10,20); // 15
 
-        Calculator c1 = new Calculator();
-        c1.setOprands(10, 20);
-        c1.sum(); // 40출력
-        c1.avg(); // 20출력
-
-        Calculator.base = 100;
-        c1.sum(); // 130출력
-        c1.avg(); // 65출력
+        Calculator.sum(50,50); // 100
+        Calculator.avg(50,50); // 50
     }
 }
