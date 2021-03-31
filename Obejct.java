@@ -1,25 +1,31 @@
+class Calculator {
+    int a,b; // 전역 변수 선언
+
+    public void setOprands(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public void sum() {
+        System.out.println("sum : " + (this.a + this.b));
+    }
+
+    public void avg() {
+        System.out.println("avg : " + ((this.a + this.b)/2));
+    }
+
+}
 public class Obejct {
-    public static void sum(int i, int j) {
-        System.out.println("sum : " + (i+j));
-    }
-    public static void avg(int i, int j) {
-        System.out.println("avg : " + ((i+j)/2));
-    }
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        int a = 2, b = 1;
-        sum(a,b);
-        avg(a,b);
+        Calculator c1 = new Calculator();
+        c1.setOprands(2, 1);
+        c1.sum();
+        c1.avg();
 
-        a = 3;
-        b = 5;
-        sum(a,b);
-        avg(a,b);
-        // ...
-
-        a = 4;
-        b =8;
-        sum(a,b);
-        avg(a,b);
+        Calculator c2 = new Calculator();
+        c2.setOprands(3, 5);
+        c2.sum();
+        c2.avg();
     }
 }
