@@ -24,6 +24,6 @@ public class fibonacci2 {
          System.out.println(n3);
     }
     public static void main(String[] args) {
-        fib(5);
+        fib(10);
     }
 }
