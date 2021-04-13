@@ -24,11 +24,11 @@ class C1 {
 public class ClassMember {
     public static void main(String[] args) {
         C1 c = new C1();
-        c.static_static();
+        //c.static_static();
         // 인스턴스를 통해 정적 메소드에 접근 -> O
         // 인스턴스 메소드가 정적 변수에 접근 -> O
 
-        c.static_instance();
+        //c.static_instance();
         // 인스턴스를 통해 정적 메소드에 접근 -> O
         // 정적 메소드가 인스턴스 변수에 접근 -> X
 
