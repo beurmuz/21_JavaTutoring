@@ -24,17 +24,24 @@ class MultiplecationCalculator extends calculator2 {
     	System.out.println(this.left*this.right);
     }
 }
+
+class DivisionCalculator extends MultiplecationCalculator {
+	public void division() {
+    	System.out.println(this.left / this.right);
+    }
+}
  
 public class Inheritance2 {
  
     public static void main(String[] args) {
  
-        MultiplecationCalculator c1 = new MultiplecationCalculator();
+        DivisionCalculator c1 = new DivisionCalculator();
         c1.setOprands(10, 20);
         c1.sum();
         c1.avg();
         c1.substract();
         c1.multiplecation();
+        c1.division();
     }
  
 }
