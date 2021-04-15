@@ -2,7 +2,7 @@
 class Calculator3 {
     int left, right;
      
-    public Calculator3() {}
+    // public Calculator3() {}
 
     public Calculator3(int left, int right){
         this.left = left;
@@ -25,8 +25,7 @@ class Calculator3 {
  
 class SubstractionableCalculator2 extends Calculator3 {
     public SubstractionableCalculator2(int left, int right) {
-        this.left = left;
-        this.right = right;
+        super(left, right);
     }
  
     public void substract() {
