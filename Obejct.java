@@ -1,4 +1,4 @@
-class Calculator {
+class cal {
     // int a,b; 
 
     // public void setOprands(int a, int b) {
@@ -17,10 +17,10 @@ class Calculator {
 }
 public class Obejct {
         public static void main(String[] args) {
-        Calculator.sum(10,20); // 30
-        Calculator.avg(10,20); // 15
+        cal.sum(10,20); // 30
+        cal.avg(10,20); // 15
 
-        Calculator.sum(50,50); // 100
-        Calculator.avg(50,50); // 50
+        cal.sum(50,50); // 100
+        cal.avg(50,50); // 50
     }
 }
