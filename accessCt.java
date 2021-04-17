@@ -3,7 +3,7 @@ class A {
         return "public void y()";
     }
     private String z(){
-        return "public void z()";
+        return "public void z()가 실행됨";
     }
     public String x(){
         return z();
