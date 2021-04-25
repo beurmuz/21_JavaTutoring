@@ -1,21 +1,26 @@
 package practice;
 
+enum Stock {
+    peachCrush("sweet"), rum("pungent"), soju("bitter"); // Stock의 상수 선언 + 생성자 호출
+    private String flavor;
+    Stock(String flavor) { // 생성자
+        System.out.println("Call Constructor " + this);
+        this.flavor = flavor;
+    }
+    String getFlavor() {
+        return this.flavor;
+    }
+}
+
+enum Sales {
+    Acompany, soju, Ccompany;
+}
+
 public class ConstantDemo {
-    private final static int APPLE = 1;
-    private final static int PEACH = 2;
-    private final static int BANANA = 3;
+     
     public static void main(String[] args) {
-        int type = APPLE;
-        switch(type){
-            case APPLE:
-                System.out.println(57+" kcal");
-                break;
-            case PEACH:
-                System.out.println(34+" kcal");
-                break;
-            case BANANA:
-                System.out.println(93+" kcal");
-                break;
+        for(Stock f : Stock.values()){
+            System.out.println(f+", "+f.getFlavor());
         }
     }
 }
