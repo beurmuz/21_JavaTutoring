@@ -1,3 +1,5 @@
+package practice;
+
 class Text{
     private int[] arr_ex = new int[3];
     Text() {

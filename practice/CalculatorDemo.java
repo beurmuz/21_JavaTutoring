@@ -1,3 +1,5 @@
+package practice;
+
 class Calculator{
     int left, right;
     public void setOprands(int left, int right){

@@ -1,3 +1,5 @@
+package practice;
+
 public class ConstantDemo {
     private final static int APPLE = 1;
     private final static int PEACH = 2;
